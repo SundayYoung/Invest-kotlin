@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_height_width"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_last_tip"
+        style="@style/wrap_height_width"
+        android:layout_margin="@dimen/margin_big"
+        android:text="@string/invest_last_money_tip"
+        android:textColor="@color/gray_8a"
+        android:textSize="@dimen/text_middle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_last_money"
+        style="@style/wrap_height_width"
+        android:layout_marginLeft="@dimen/margin_content_5"
+        android:textColor="@color/black_3e"
+        android:textSize="@dimen/text_middle"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_last_tip"
+        app:layout_constraintLeft_toRightOf="@id/tv_last_tip" />
+
+    <TextView
+        android:id="@+id/tv_rmb_tip"
+        style="@style/wrap_height_width"
+        android:layout_marginTop="@dimen/margin_bigger"
+        android:text="@string/common_rmb"
+        android:textColor="@color/black_3e"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tv_last_tip"
+        app:layout_constraintTop_toBottomOf="@id/tv_last_tip" />
+
+    <EditText
+        android:id="@+id/et_invest_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:background="@color/tran"
+        android:gravity="center_vertical"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black_3e"
+        android:textColorHint="@color/gray_c2"
+        android:textSize="@dimen/text_biggest"
+        app:layout_constraintBottom_toBottomOf="@id/tv_rmb_tip"
+        app:layout_constraintLeft_toRightOf="@id/tv_rmb_tip"
+        app:layout_constraintTop_toTopOf="@id/tv_rmb_tip" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_below="@id/tv_rmb_tip"
+        android:layout_margin="@dimen/margin_big"
+        android:background="@color/gray_e1"
+        app:layout_constraintTop_toBottomOf="@id/tv_rmb_tip" />
+
+    <TextView
+        android:id="@+id/tv_use_tip"
+        style="@style/wrap_height_width"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="@string/mine_available_amount_assets"
+        android:textColor="@color/gray_8a"
+        android:textSize="@dimen/text_default"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+    <TextView
+        android:id="@+id/tv_use_money"
+        style="@style/wrap_height_width"
+        android:layout_marginLeft="@dimen/margin_content_5"
+        android:layout_toRightOf="@id/tv_use_tip"
+        android:textColor="@color/black_3e"
+        android:textSize="@dimen/text_middle"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_use_tip"
+        app:layout_constraintLeft_toRightOf="@id/tv_use_tip" />
+
+    <TextView
+        android:id="@+id/tv_all_input"
+        style="@style/wrap_height_width"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_middle"
+        android:text="@string/invest_all"
+        android:textColor="@color/blue_00"
+        android:textSize="@dimen/text_default"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_use_money"
+        app:layout_constraintLeft_toRightOf="@id/tv_use_money" />
+
+    <TextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="@dimen/embody_recharge_width"
+        android:layout_height="@dimen/embody_recharge_height"
+        android:layout_marginRight="@dimen/margin_big"
+        android:background="@drawable/selector_round_rect_blue_click"
+        android:gravity="center"
+        android:text="@string/mine_recharge"
+        android:textColor="@color/blue_00"
+        android:textSize="@dimen/text_default"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_all_input"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/line_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_middle"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:background="@color/common_main_bg_color"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recharge" />
+
+    <RelativeLayout
+        android:id="@+id/rl_invest_ment_ticket"
+        style="@style/common_item_layout"
+        app:layout_constraintTop_toBottomOf="@id/line_space">
+
+        <TextView
+            style="@style/wrap_height_width"
+            android:layout_centerVertical="true"
+            android:text="@string/invest_ticket"
+            android:textColor="@color/black_3e"
+            android:textSize="@dimen/text_default" />
+
+        <TextView
+            android:id="@+id/tv_ticket_tip"
+            style="@style/wrap_height_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/common_icon_arrow"
+            android:text="@string/invest_choise"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_default" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_main_bg_color"
+        app:layout_constraintTop_toBottomOf="@id/rl_invest_ment_ticket" />
+
+    <TextView
+        android:id="@+id/tv_income"
+        style="@style/wrap_height_width"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:drawablePadding="@dimen/margin_content_5"
+        android:drawableRight="@drawable/ic_finance_cue"
+        android:gravity="center"
+        android:textColor="@color/red_ff"
+        android:textSize="@dimen/text_middle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_invest_ment_ticket" />
+
+    <Button
+        android:id="@+id/bt_invest"
+        style="@style/long_button_e1_style"
+        android:layout_marginTop="@dimen/margin_bigger"
+        android:text="@string/invest_home_invest_rightnow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_income" />
+
+    <TextView
+        android:id="@+id/tv_protocol"
+        style="@style/wrap_height_width"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingRight="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:textColor="@color/blue_00"
+        android:textSize="@dimen/text_middle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_invest"
+        android:lineSpacingMultiplier="1.2"/>
+
+</android.support.constraint.ConstraintLayout>

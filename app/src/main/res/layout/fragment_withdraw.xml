@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_height_width"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin_big">
+
+        <ImageView
+            android:id="@+id/iv_bank_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_icon_user" />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:lineSpacingExtra="@dimen/margin_content_3"
+            android:textColor="@color/gray_8a"
+            android:textSize="@dimen/text_middle" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:background="@color/white"
+        android:padding="@dimen/margin_big">
+
+        <TextView
+            android:id="@+id/tv_money_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_withdraw_money"
+            android:textColor="@color/black_3e"
+            android:textSize="@dimen/text_default"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rmb_tip"
+            style="@style/wrap_height_width"
+            android:layout_below="@id/tv_money_tip"
+            android:layout_marginTop="@dimen/margin_25"
+            android:text="@string/common_rmb"
+            android:textColor="@color/black_3e"
+            android:textSize="@dimen/icon_biggest"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_withdraw_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_rmb_tip"
+            android:layout_alignTop="@+id/tv_rmb_tip"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_toLeftOf="@+id/tv_withdraw_all"
+            android:layout_toRightOf="@id/tv_rmb_tip"
+            android:background="@color/tran"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            android:paddingBottom="5dp"
+            android:textColor="@color/black_3e"
+            android:textColorHint="@color/gray_c2"
+            android:textCursorDrawable="@drawable/shape_cursor"
+            android:textSize="@dimen/icon_biggest" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_rmb_tip"
+            android:layout_alignParentRight="true"
+            android:text="@string/mine_withdraw_all"
+            android:textColor="@color/blue_00"
+            android:textSize="@dimen/text_default" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_rmb_tip"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@color/gray_e1" />
+
+
+        <TextView
+            android:id="@+id/tv_withdraw_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:textColor="@color/gray_8a" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_info_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:text="@string/mine_withdraw_expect"
+        android:textColor="@color/gray_8a"
+        android:textSize="@dimen/text_middle" />
+
+    <Button
+        android:id="@+id/bt_invest"
+        style="@style/common_long_button_bottom"
+        android:layout_margin="@dimen/margin_bigger"
+        android:enabled="false"
+        android:text="@string/next_step" />
+
+
+</LinearLayout>

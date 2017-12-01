@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_change_pw_title"
+        style="@style/common_page_big_title"
+        android:text="@string/please_reset_login_pw" />
+
+    <ImageView
+        android:id="@+id/iv_change_pw_title_line"
+        style="@style/line_parent"
+        android:layout_below="@id/tv_change_pw_title" />
+
+    <LinearLayout
+        android:id="@+id/rl_change_pw_old"
+        style="@style/common_item_layout"
+        android:layout_below="@+id/iv_change_pw_title_line">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/old_pw" />
+
+        <EditText
+            android:id="@+id/et_change_pw_old_pw"
+            style="@style/common_item_edittext_ll"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_weight="1"
+            android:hint="@string/please_input_old_pw"
+            android:digits="@string/login_pass_check"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_change_pw_old_line"
+        style="@style/line_horizontal_margin_left_right"
+        android:layout_below="@id/rl_change_pw_old" />
+
+    <LinearLayout
+        android:id="@+id/rl_change_new_old"
+        style="@style/common_item_layout"
+        android:layout_below="@+id/iv_change_pw_old_line">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/new_pw" />
+
+        <EditText
+            android:id="@+id/et_change_pw_new_pw"
+            style="@style/common_item_edittext_ll"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_weight="1"
+            android:digits="@string/login_pass_check"
+            android:hint="@string/please_new_pw"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_change_pw_new_line"
+        style="@style/line_horizontal_margin_left_right"
+        android:layout_below="@id/rl_change_new_old" />
+
+    <TextView
+        style="@style/text_size_middle"
+        android:layout_below="@id/iv_change_pw_new_line"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_content_5"
+        android:text="@string/change_pw_hint"
+        android:textColor="@color/gray_c2" />
+
+
+    <Button
+        android:id="@+id/bt_change_pw_submit"
+        style="@style/common_long_button_bottom"
+        android:enabled="false"
+        android:text="@string/submit" />
+</RelativeLayout>

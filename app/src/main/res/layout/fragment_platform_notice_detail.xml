@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:layout_marginTop="@dimen/title_image_size"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_notice_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_2d"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_notice_detail_time"
+            style="@style/text_size_middle"
+            android:layout_marginTop="@dimen/margin_content_5"
+            android:textColor="@color/tran_gray_8a_60" />
+
+
+        <TextView
+            android:id="@+id/tv_notice_detail_content"
+            style="@style/text_size_default"
+            android:layout_marginTop="@dimen/margin_bigger"
+            android:lineSpacingMultiplier="@string/text_space_1.5"
+            android:textColor="@color/tran_gray_8a_80" />
+
+    </LinearLayout>
+
+
+</ScrollView>

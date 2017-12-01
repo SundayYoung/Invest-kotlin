@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginRight="@dimen/margin_big"
+        android:background="@drawable/shape_round_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_big">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            android:text="@string/debug_tip"
+            android:textColor="@color/red_f2"
+            android:textSize="@dimen/text_small" />
+
+        <Switch
+            android:id="@+id/st_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:text="@string/debug_release" />
+
+        <Switch
+            android:id="@+id/st_pre_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_22"
+            android:layout_marginTop="@dimen/margin_22"
+            android:text="@string/debug_pre_release" />
+
+        <Switch
+            android:id="@+id/st_ssl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_ssl" />
+
+    </LinearLayout>
+</LinearLayout>

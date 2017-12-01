@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/mine_custom_32"
+    >
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mine_custom_32"
+        style="@style/text_size_biggest"
+        android:textSize="@dimen/text_module_big"
+        android:text="@string/mine_unaccount"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/text_bigger"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/embody_recharge_height"
+        android:layout_width="@dimen/mine_open_account"
+        android:gravity="center"
+        android:background="@drawable/mine_open_account"
+        android:text="@string/mine_unaccount_open"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>

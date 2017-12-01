@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--总资产-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_bigger"
+        android:text="@string/mine_total_assets"
+        android:textColor="@color/white_trans_0.9"
+        android:textSize="@dimen/text_middle" />
+    <!--金钱-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_total_asset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:text="@string/default_numerical_value"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_biggest"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ib_desensi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_big"
+            android:src="@drawable/my_icon_eye_open" />
+
+    </RelativeLayout>
+    <!--累计总收益、待收本金、待收利息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16.3dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_total_earning"
+                style="@style/text_size_default_white"
+                android:text="@string/default_numerical_value"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_size_small_write_tran"
+                android:text="@string/mine_accumulated_total_income"
+                android:textSize="@dimen/text_middle" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/line_height"
+            android:layout_height="@dimen/login_translate_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white_trans_0.2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_principal_received"
+                style="@style/text_size_default_white"
+                android:text="@string/default_numerical_value"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_size_small_write_tran"
+                android:text="@string/mine_principal_received"
+                android:textSize="@dimen/text_middle" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/line_height"
+            android:layout_height="@dimen/login_translate_height"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white_trans_0.2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_interest_received"
+                style="@style/text_size_default_white"
+                android:text="@string/default_numerical_value"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_size_small_write_tran"
+                android:text="@string/mine_interest_received"
+                android:textSize="@dimen/text_middle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

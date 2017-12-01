@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mine_custom_164"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height">
+
+        <ImageButton
+            android:id="@+id/ibn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:padding="@dimen/margin_big"
+            android:src="@drawable/login_icon_cancel" />
+
+        <TextView
+            style="@style/text_size_bigger"
+            android:layout_centerInParent="true"
+            android:text="@string/share_title_name"
+            android:textColor="@color/black_3e" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_share_wechat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/margin_middle"
+            android:drawableTop="@drawable/my_invitation_icon_wechat"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_bigger"
+            android:paddingTop="@dimen/margin_middle"
+            android:text="@string/share_invitation_icon_friends"
+            android:textColor="@color/gray_8a"
+            android:textSize="@dimen/text_default" />
+
+        <TextView
+            android:id="@+id/tv_share_friends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/margin_middle"
+            android:drawableTop="@drawable/my_invitation_icon_friends"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_bigger"
+            android:paddingTop="@dimen/margin_middle"
+            android:text="@string/share_invitation_icon_cicle"
+            android:textColor="@color/gray_8a"
+            android:textSize="@dimen/text_default" />
+    </LinearLayout>
+
+</LinearLayout>

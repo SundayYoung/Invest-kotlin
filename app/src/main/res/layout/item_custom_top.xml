@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mine_custom_68"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_custom_prinvipal"
+            style="@style/text_size_default_black3e"
+            android:layout_margin="0dp"
+            android:textStyle="bold"
+            android:text="@string/default_numerical_value" />
+
+        <TextView
+            style="@style/text_size_middle_gray_8a"
+            android:text="@string/custom_principal_investment" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_interest_received"
+            style="@style/text_size_default_black3e"
+            android:layout_margin="0dp"
+            android:textStyle="bold"
+            android:text="@string/default_numerical_value" />
+
+        <TextView
+            style="@style/text_size_middle_gray_8a"
+            android:text="@string/mine_interest_received" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_custom_accumulated"
+            style="@style/text_size_default_black3e"
+            android:textStyle="bold"
+            android:layout_margin="0dp"
+            android:text="@string/default_numerical_value" />
+
+        <TextView
+            style="@style/text_size_middle_gray_8a"
+            android:text="@string/custom_accumulatedl_income" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.weiyankeji.library.customview.bottomview.BottomNavigationViewPager
+        android:id="@+id/bvp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <com.weiyankeji.library.customview.bottomview.BottomNavigationView
+        android:id="@+id/bnv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemActiveColor="@color/black_bottom_sel"
+        app:itemInActiveColor="@color/gray_bottom_nom"
+        app:itemActiveSize="@dimen/bottom_navigation_text_size_forced_inactive"
+        app:itemInActiveSize="@dimen/bottom_navigation_text_size_forced_inactive"/>
+
+</LinearLayout>

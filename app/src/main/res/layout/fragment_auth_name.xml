@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_auth_name_title"
+        style="@style/common_page_big_title_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_size_module_big_black_2d"
+            android:text="@string/please_user_auth" />
+
+        <TextView
+            android:id="@+id/tv_auth_name_phone"
+            style="@style/text_size_middle_gray_8a"
+            android:layout_marginTop="@dimen/margin_content_5"
+            android:text="@string/bind_phone" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ll_auth_name_title_line"
+        style="@style/line_parent"
+        android:layout_below="@id/ll_auth_name_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_auth_name_real"
+        style="@style/common_item_layout"
+        android:layout_below="@+id/ll_auth_name_title_line">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/real_name" />
+
+        <EditText
+            android:id="@+id/et_auth_name_real"
+            style="@style/common_item_edittext_ll"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:hint="@string/please_input_real_name" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_auth_name_real_line"
+        style="@style/line_horizontal_margin_left_right"
+        android:layout_below="@id/ll_auth_name_real" />
+
+    <LinearLayout
+        android:id="@+id/ll_auth_name_id_card"
+        style="@style/common_item_layout"
+        android:layout_below="@+id/iv_auth_name_real_line">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/id_crad_number" />
+
+        <EditText
+            android:id="@+id/et_auth_name_id_card"
+            style="@style/common_item_edittext_ll"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_weight="1"
+            android:digits="@string/login_pass_check"
+            android:hint="@string/please_input_id_card_number" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/line_horizontal_margin_left_right"
+        android:layout_below="@id/ll_auth_name_id_card" />
+
+    <Button
+        android:id="@+id/bt_auth_name_next_step"
+        style="@style/common_long_button_bottom"
+        android:enabled="false"
+        android:text="@string/next_step" />
+</RelativeLayout>
+

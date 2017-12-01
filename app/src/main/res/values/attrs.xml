@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--GradientTextView start-->
+    <declare-styleable name="gradient_textview">
+        <attr name="isGradient" format="boolean" />
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+    </declare-styleable>
+    <!--GradientTextView end-->
+
+    <!--自定义百分比图形-->
+    <declare-styleable name="PecentView">
+        <attr name="maxRadius" format="dimension" />
+        //大圆半径
+        <attr name="minRadius" format="dimension" />
+        //小圆半径
+        <attr name="textColor" format="color" />
+        //文字颜色
+        <attr name="pecentColor" format="color" />
+        //文字百分比颜色
+        <attr name="textSize" format="dimension" />
+        //文字大小
+    </declare-styleable>
+
+</resources>

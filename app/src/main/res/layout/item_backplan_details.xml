@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mine_avail_64">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_avail_64"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingRight="@dimen/margin_big">
+
+        <TextView
+            android:id="@+id/tv_phase"
+            style="@style/text_size_default"
+            android:textColor="@color/black_3e"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            style="@style/text_size_middle_gray_8a"
+            android:layout_below="@+id/tv_phase" />
+
+        <TextView
+            android:id="@+id/tv_pay_money"
+            style="@style/text_size_default"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black_3e"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            style="@style/text_size_middle_gray_8a"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_pay_money" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line"
+        style="@style/line_horizontal" />
+</RelativeLayout>

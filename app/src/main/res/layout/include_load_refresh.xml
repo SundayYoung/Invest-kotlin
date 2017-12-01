@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weiyankeji.library.customview.swipetoloadlayout.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_to_load_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg_color"
+    app:swipe_style="classic">
+    <!--id不可更改-->
+    <include
+        android:id="@id/swipe_refresh_header"
+        layout="@layout/layout_twitter_header" />
+
+    <!--id不可更改-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/margin_middle" />
+    <!--id不可更改-->
+    <include
+        android:id="@id/swipe_load_more_footer"
+        layout="@layout/layout_classic_footer" />
+</com.weiyankeji.library.customview.swipetoloadlayout.SwipeToLoadLayout>

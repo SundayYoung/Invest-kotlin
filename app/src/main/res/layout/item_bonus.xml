@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mine_avail_64"
+    android:paddingLeft="@dimen/margin_big"
+    android:paddingRight="@dimen/margin_big">
+
+    <TextView
+        android:id="@+id/tv_item_bonus_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_middle"
+        android:textColor="@color/black_3e"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_bonus_time"
+        style="@style/text_size_middle_gray_8a"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_item_bonus_title"
+        android:layout_marginTop="@dimen/margin_content_5"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_item_bonus_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_item_bonus_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_item_bonus_title"
+        android:textColor="@color/red_ff"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_bonus_escription"
+        style="@style/text_size_middle_gray_8a"
+        android:layout_alignBaseline="@+id/tv_item_bonus_time"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_item_bonus_money"
+        android:text="@string/bonus_datails_escription" />
+</RelativeLayout>

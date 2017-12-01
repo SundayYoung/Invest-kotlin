@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg_color"
+    android:orientation="vertical">
+    <!--在投本金、代收利息、累计收益-->
+    <include layout="@layout/item_custom_top" />
+
+    <ImageView
+        style="@style/line_horizontal"
+        android:layout_marginLeft="0dp" />
+    <!--投资中和已结束-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/blue_00"
+        app:tabIndicatorHeight="@dimen/line_height_1"
+        app:tabSelectedTextColor="@color/blue_00"
+        app:tabTextColor="@color/gray_8a" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_middle"
+        android:background="@color/common_main_bg_color" />
+    <!--内容-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_custom_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

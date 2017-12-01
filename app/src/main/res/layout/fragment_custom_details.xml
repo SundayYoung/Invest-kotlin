@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg_color"
+    android:orientation="vertical">
+    <!--在投本金、待回款、已回款-->
+    <LinearLayout
+        android:id="@+id/include_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_custom_68"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_custom_prinvipal"
+                style="@style/text_size_default_black3e"
+                android:textStyle="bold"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:id="@+id/tv_prinvipal_title"
+                style="@style/text_size_middle_gray_8a"
+                android:text="@string/custom_prin_inter_received_blanck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_interest_received"
+                style="@style/text_size_default_black3e"
+                android:textStyle="bold"
+                android:layout_margin="0dp" />
+
+            <TextView
+                style="@style/text_size_middle_gray_8a"
+                android:text="@string/custom_original_invest_blanck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/tv_custom_accumulated"
+                style="@style/text_size_default_black3e"
+                android:textStyle="bold"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:id="@+id/tv__accumulated_title"
+                style="@style/text_size_middle_gray_8a"
+                android:text="@string/mine_interest_received" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/tv_regular"
+        style="@style/text_size_default_black3e_custom_details"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height"
+        android:layout_below="@+id/include_top"
+        android:layout_marginTop="@dimen/margin_big"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingTop="0dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        style="@style/line_horizontal"
+        android:layout_below="@+id/tv_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--预期年华收益-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_expect_fix"
+                style="@style/text_size_default_black3e_custom_details"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_big"
+                android:text="@string/custom_details_rate_return" />
+            <!--年收益百分比-->
+            <TextView
+                android:id="@+id/tv_expect"
+                style="@style/text_size_default_black3e_custom_details_time"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_8a" />
+
+        </RelativeLayout>
+        <!--开始计息-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_begin_fix"
+                style="@style/text_size_default_black3e_custom_details"
+                android:paddingLeft="@dimen/margin_big"
+                android:text="@string/custom_details_begin_interset" />
+
+            <TextView
+                android:id="@+id/tv_begin"
+                style="@style/text_size_default_black3e_custom_details_time"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/gray_8a" />
+
+
+        </RelativeLayout>
+        <!--结束计息-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_over_fix"
+                style="@style/text_size_default_black3e_custom_details"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_big"
+                android:text="@string/custom_details_over_interset" />
+
+            <TextView
+                android:id="@+id/tv_over"
+                style="@style/text_size_default_black3e_custom_details_time"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_8a" />
+
+        </RelativeLayout>
+        <!--回款到账-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_back_accout_fix"
+                style="@style/text_size_default_black3e_custom_details"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_big"
+                android:text="@string/custom_details_back_account" />
+
+            <TextView
+                android:id="@+id/tv_back_accout"
+                style="@style/text_size_default_black3e_custom_details_time"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_8a" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_image_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_middle"
+        android:background="@color/common_main_bg_color" />
+    <!--回款计划-->
+    <RelativeLayout
+        android:id="@+id/rl_regular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height"
+        android:layout_below="@+id/iv_image_margin"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_back_plan_fix"
+            style="@style/text_size_default_black3e_custom_details"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_big"
+            android:text="@string/custom_details_back_plan" />
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignBaseline="@+id/tv_back_plan_fix"
+            android:layout_alignBottom="@+id/tv_back_plan_fix"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_image_plan"
+            android:layout_toStartOf="@+id/iv_image_plan"
+            android:text="@string/custom_details_immediately"
+            android:textColor="@color/gray_8a" />
+
+        <ImageView
+            style="@style/line_horizontal"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/iv_image_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_big"
+            android:background="@drawable/common_icon_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_invest_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height"
+        android:layout_below="@+id/rl_regular"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_invert_agreenment_fix"
+            style="@style/text_size_default_black3e_custom_details"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/margin_big"
+            android:text="@string/custom_details_invest_agreement" />
+
+        <ImageView
+            android:id="@+id/iv_image_agreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_big"
+            android:background="@drawable/common_icon_arrow" />
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignBaseline="@+id/tv_invert_agreenment_fix"
+            android:layout_alignBottom="@+id/tv_invert_agreenment_fix"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/iv_image_agreen"
+            android:layout_toStartOf="@+id/iv_image_agreen"
+            android:text="@string/custom_details_immediately"
+            android:textColor="@color/gray_8a" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_friend_remind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_image_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_big"
+            android:background="@drawable/finance_cue" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/text_size_middle"
+            android:layout_marginRight="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_toEndOf="@+id/iv_image_icon"
+            android:layout_toRightOf="@+id/iv_image_icon"
+            android:text="@string/custom_details_rule"
+            android:textColor="@color/gray_c2" />
+    </RelativeLayout>
+</LinearLayout>

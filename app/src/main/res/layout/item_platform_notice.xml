@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_middle"
+    android:background="@drawable/common_select_white_fore_tran_black"
+    android:padding="@dimen/margin_big">
+
+    <TextView
+        android:id="@+id/tv_platform_nl_title"
+        android:layout_width="@dimen/platform_notice_item_title_width"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_2d"
+        android:textSize="@dimen/text_default"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_platform_nl_date"
+        style="@style/text_size_middle_gray_8a"
+        android:layout_alignBaseline="@+id/tv_platform_nl_title"
+        android:layout_alignBottom="@+id/tv_platform_nl_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+       />
+
+
+    <TextView
+        android:id="@+id/tv_platform_nl_content"
+        style="@style/text_size_default_width_match"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_platform_nl_title"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="@string/text_space_1"
+        android:maxLines="2"
+        android:textColor="@color/gray_8a" />
+
+
+</RelativeLayout>

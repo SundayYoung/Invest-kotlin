@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 字体大小 -->
+    <dimen name="text_bigger">18dp</dimen>
+    <dimen name="text_big">16dp</dimen>
+    <dimen name="text_default">14dp</dimen>
+    <dimen name="text_middle">12dp</dimen>
+    <dimen name="text_small">10dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+
+    <dimen name="text_module_big">22dp</dimen>
+    <dimen name="text_title">@dimen/text_bigger</dimen>
+    <dimen name="text_title_small">@dimen/text_big</dimen>
+    <dimen name="text_biggest">30dp</dimen>
+
+    <!-- 间距大小 -->
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_bigger">20dp</dimen>
+    <dimen name="margin_big">15dp</dimen>
+    <dimen name="margin_middle">10dp</dimen>
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="margin_minimum">4dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+
+
+    <dimen name="margin_content_2">2dp</dimen>
+    <dimen name="margin_content_3">3dp</dimen>
+    <dimen name="margin_content_5">5dp</dimen>
+    <dimen name="margin_content_6">6dp</dimen>
+    <dimen name="margin_content_7">7dp</dimen>
+    <dimen name="margin_content_8">8dp</dimen>
+    <dimen name="margin_content_26">26dp</dimen>
+
+    <!-- 图标大小 -->
+    <dimen name="icon_biggest">36dp</dimen>
+    <dimen name="icon_big">36dp</dimen>
+    <dimen name="icon_middle">22dp</dimen>
+    <dimen name="icon_small">16dp</dimen>
+
+    <!-- 圆角大小 -->
+    <dimen name="corner_bigger">16dp</dimen>
+    <dimen name="corner_default">12dp</dimen>
+    <dimen name="corner_big">10dp</dimen>
+    <dimen name="corner_small">3dp</dimen>
+    <dimen name="corner_minmum">2dp</dimen>
+
+
+    <!-- 标题的高 -->
+    <dimen name="title_height">44dp</dimen>
+
+    <!-- 功能选项卡的高 -->
+    <dimen name="item_action_height">48dp</dimen>
+
+    <!--首页底部导航栏的高-->
+    <dimen name="main_nav_bar_height">49dp</dimen>
+
+    <!-- Menu image size -->
+    <dimen name="title_image_size">25dp</dimen>
+    <dimen name="title_image_padding">12dp</dimen>
+
+    <!-- 线条高度 -->
+    <dimen name="line_height">0.33dp</dimen>
+    <!-- 线条高度 -->
+    <dimen name="line_height_1">1dp</dimen>
+    <!-- list线条高度 -->
+    <dimen name="list_line_height">@dimen/stroke_width</dimen>
+
+    <!-- 矩形描边宽度 -->
+    <dimen name="stroke_width">@dimen/line_height</dimen>
+
+    <!--Banner标记宽高-->
+    <dimen name="dot_width">10dp</dimen>
+    <dimen name="dot_height">2dp</dimen>
+
+    <!--提现和充值圆角半径-->
+    <dimen name="embody_recharge_radius">50dp</dimen>
+    <!--充值和提现view高度和宽度-->
+    <dimen name="embody_recharge_height">@dimen/button_round_height</dimen>
+
+    <dimen name="embody_recharge_width">54dp</dimen>
+    <!--立即开通-->
+    <dimen name="mine_open_account">88dp</dimen>
+    <!--提现和充值父控件高度-->
+    <dimen name="mine_avail_64">64dp</dimen>
+    <!--交易记录高度-->
+    <dimen name="mine_avail_60">60dp</dimen>
+    <!--我的定制-->
+    <dimen name="mine_custom_68">68dp</dimen>
+    <dimen name="mine_custom_44">44dp</dimen>
+    <dimen name="mine_custom_40">40dp</dimen>
+    <dimen name="mine_custom_32">32dp</dimen>
+    <dimen name="mine_custom_172">172dp</dimen>
+    <dimen name="mine_custom_202">202dp</dimen>
+    <dimen name="mine_custom_212">212dp</dimen>
+    <dimen name="mine_custom_164">164dp</dimen>
+    <dimen name="mine_custom_75">75dp</dimen>
+    <dimen name="mine_custom_icon_and_pading">51dp</dimen>
+    <!--竖直线高度-->
+    <dimen name="line_height_login">14dp</dimen>
+
+    <dimen name="button_round_height">28dp</dimen>
+    <dimen name="button_long_width">315dp</dimen>
+    <dimen name="button_long_height">@dimen/item_action_height</dimen>
+    <dimen name="assets_total_height_115">115dp</dimen>
+    <dimen name="assets_total_height_114">114dp</dimen>
+    <dimen name="assets_total_height_156">156dp</dimen>
+    <dimen name="assets_total_height_246">246dp</dimen>
+    <dimen name="assets_circular_maxradius">52dp</dimen>
+    <dimen name="assets_circular_minradius">24dp</dimen>
+    <!--请求验证码的按钮宽度-->
+    <dimen name="message_code_button_height">88dp</dimen>
+    <!--平台公告标题的宽度-->
+    <dimen name="platform_notice_item_title_width">248dp</dimen>
+    <!--新闻热点标题宽度-->
+    <dimen name="hot_news_item_title_width">202dp</dimen>
+    <dimen name="hot_news_item_img_width">98dp</dimen>
+    <!--下拉刷新图标的大小-->
+    <dimen name="refresh_image_width_height">24dp</dimen>
+
+    <!--登录移动动画高度-->
+    <dimen name="login_translate_height">30dp</dimen>
+    <!--关于我们高度-->
+    <dimen name="about_us_height_229">229dp</dimen>
+    <dimen name="about_us_height_icon_72">72dp</dimen>
+    <dimen name="about_us_margin_11">11dp</dimen>
+</resources>

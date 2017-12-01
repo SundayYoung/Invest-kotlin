@@ -1,0 +1,381 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/launch_drawable</item>
+    </style>
+
+    <!--宽高包裹内容根模版-->
+    <style name="wrap_height_width">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--宽match_parent 根模版-->
+    <style name="wrap_height_match_width">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <!--宽高充满根模版-->
+    <style name="match_height_width">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <!--字体大小为text_small-->
+    <style name="text_size_small" parent="wrap_height_width">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+    <!--字体大小为text_small-->
+    <style name="text_size_module_big" parent="wrap_height_width">
+        <item name="android:textSize">@dimen/text_module_big</item>
+    </style>
+
+
+    <!--字体大小为text_middle 注意parent-->
+    <style name="text_size_middle" parent="wrap_height_width">
+        <item name="android:textSize">@dimen/text_middle</item>
+    </style>
+    <!--字体大小为text_middle 颜色为gray_8a-->
+    <style name="text_size_middle_gray_8a" parent="text_size_middle">
+        <item name="android:textColor">@color/gray_8a</item>
+    </style>
+    <!--字体大小为text_middle 颜色为blue_00-->
+    <style name="text_size_middle_blue_00" parent="text_size_middle">
+        <item name="android:textColor">@color/blue_00</item>
+    </style>
+
+    <!--字体大小为text_module_big 颜色为black_2d-->
+    <style name="text_size_module_big_black_2d" parent="text_size_module_big">
+        <item name="android:textColor">@color/black_2d</item>
+    </style>
+
+
+    <!--字体大小为text_middle 注意parent-->
+    <style name="text_size_middle_width_match" parent="wrap_height_match_width">
+        <item name="android:textSize">@dimen/text_middle</item>
+    </style>
+
+
+    <!--字体大小为text_default  注意parent-->
+    <style name="text_size_default" parent="wrap_height_width">
+        <item name="android:textSize">@dimen/text_default</item>
+    </style>
+
+    <!--字体大小为text_default 注意parent-->
+    <style name="text_size_default_width_match" parent="wrap_height_match_width">
+        <item name="android:textSize">@dimen/text_default</item>
+    </style>
+
+    <!--字体大小为text_big-->
+    <style name="text_size_big" parent="wrap_height_width">
+        <item name="android:textColor">@color/black_3e</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style>
+
+
+    <!--字体大小为text_bigger-->
+    <style name="text_size_bigger" parent="wrap_height_width">
+        <item name="android:textSize">@dimen/text_bigger</item>
+    </style>
+
+
+    <!--字体大小为text_biggest-->
+    <style name="text_size_biggest" parent="wrap_height_width">
+        <item name="android:textSize">@dimen/text_biggest</item>
+    </style>
+
+
+    <!--字体大小：text_default  颜色 :FFFFFF-->
+    <style name="text_size_default_white" parent="text_size_default">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--字体大小：text_default  颜色 :3e 比例布局-->
+    <style name="text_size_default_black3e_assets" parent="text_size_default">
+        <item name="android:textColor">@color/black_3e</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+
+    </style>
+
+
+    <!--字体大小：text_small  颜色：30%透明-->
+    <style name="text_size_small_write_tran" parent="text_size_small">
+        <item name="android:textColor">@color/white_trans_0.7</item>
+    </style>
+
+
+    <!--mine字体大小为:text_default  颜色：3E4559-->
+    <style name="text_size_default_black3e" parent="text_size_default">
+        <item name="android:textColor">@color/black_3e</item>
+        <item name="android:layout_marginLeft">26dp</item>
+    </style>
+
+    <!--mine字体大小为:text_default, 用于投资详情  颜色：3E4559-->
+    <style name="text_size_default_black3e_custom_details" parent="text_size_default_width_match">
+        <item name="android:textColor">@color/black_3e</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!--mine字体大小为:text_default, 用于投资详情时间显示  颜色：3E4559-->
+    <style name="text_size_default_black3e_custom_details_time" parent="text_size_default">
+        <item name="android:textColor">@color/black_3e</item>
+        <item name="android:layout_marginRight">@dimen/margin_big</item>
+    </style>
+
+
+    <!--mine字体大小为:text_default  颜色：C2C4CC-->
+    <style name="text_size_default_grayc2" parent="text_size_default">
+        <item name="android:textColor">@color/gray_c2</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+
+    <!--水平线-->
+    <style name="line_parent">
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/gray_e1</item>
+    </style>
+    <!--水平线-->
+    <style name="line_horizontal" parent="line_parent">
+        <item name="android:layout_marginLeft">@dimen/margin_big</item>
+    </style>
+
+    <!--水平线-->
+    <style name="line_parent_bg_white">
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:src">@color/gray_e1</item>
+        <item name="android:paddingLeft">@dimen/margin_big</item>
+    </style>
+
+
+    <!--水平线 左右间距-->
+    <style name="line_horizontal_margin_left_right" parent="line_horizontal">
+        <item name="android:layout_marginLeft">@dimen/margin_big</item>
+        <item name="android:layout_marginRight">@dimen/margin_big</item>
+    </style>
+    <!--我的页面linearLayout-->
+
+    <!--模块标题  start-->
+    <style name="module_title" parent="@style/wrap_height_width">
+        <item name="android:textColor">@color/black_2d</item>
+        <item name="android:textSize">@dimen/text_module_big</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="module_describe" parent="@style/text_size_middle">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/margin_content_2</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+    </style>
+
+    <style name="module_content_layout_padding">
+        <item name="android:layout_marginBottom">@dimen/margin_big</item>
+        <item name="android:layout_marginLeft">@dimen/margin_big</item>
+        <item name="android:layout_marginRight">@dimen/margin_big</item>
+        <item name="android:layout_marginTop">@dimen/margin_middle</item>
+    </style>
+
+    <style name="module_content_layout" parent="@style/module_content_layout_padding">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--模块标题  end-->
+
+    <!--按钮风格 start-->
+    <style name="button_parent" parent="@style/Widget.AppCompat.Button.Borderless"></style>
+
+    <!--长按钮风格-->
+    <style name="button_style" parent="button_parent">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/button_long_width</item>
+        <item name="android:layout_height">@dimen/button_long_height</item>
+    </style>
+
+    <style name="long_button_style" parent="button_style">
+        <item name="android:textColor">@color/common_long_button_text_color</item>
+        <item name="android:textSize">@dimen/text_bigger</item>
+        <item name="android:background">@drawable/common_long_button_state_style</item>
+    </style>
+
+    <style name="common_long_button_bottom" parent="long_button_style">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bigger</item>
+    </style>
+
+    <!--长按钮灰色风格-->
+    <style name="long_button_e1_style" parent="button_style">
+        <item name="android:background">@drawable/shape_round_button_bg_gray_e1</item>
+        <item name="android:textColor">@color/gray_c2</item>
+        <item name="android:textSize">@dimen/text_bigger</item>
+    </style>
+    <!--按钮风格 end-->
+
+    <!--银行输入框风格-->
+    <style name="bank_module" parent="text_size_default_white">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_bigger</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/black_3e</item>
+        <item name="android:textColorHint">@color/gray_c2</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <!--LinearLayout 输入框-->
+    <style name="common_item_edittext_ll" parent="text_size_default_white">
+        <item name="android:layout_height">@dimen/item_action_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_default</item>
+        <item name="android:background">@null</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/black_3e</item>
+        <item name="android:textColorHint">@color/gray_c2</item>
+    </style>
+
+
+    <!--<EditText-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/white"-->
+    <!--android:src="@drawable/common_icon_arrow"-->
+    <!--android:textColor="@color/black_2d"-->
+    <!--android:textColorHint="@color/gray_c2" />-->
+
+    <!--<EditText-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/white"-->
+    <!--android:src="@drawable/common_icon_arrow"-->
+    <!--android:textColor="@color/black_2d"-->
+    <!--android:textColorHint="@color/gray_c2" />-->
+
+    <style name="invest_detail_top" parent="wrap_height_width">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_middle</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="invest_detail_bottom" parent="wrap_height_width">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_middle</item>
+        <item name="android:layout_marginTop">@dimen/margin_content_3</item>
+        <item name="android:alpha">0.85</item>
+    </style>
+
+    <style name="invest_detail_tvertical_line">
+        <item name="android:layout_width">@dimen/line_height</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:background">@color/white_a3</item>
+    </style>
+
+    <style name="invest_detail_arrow" parent="wrap_height_match_width">
+        <item name="android:drawableRight">@drawable/common_icon_arrow</item>
+        <item name="android:textColor">@color/black_3e</item>
+        <item name="android:textSize">@dimen/text_default</item>
+        <item name="android:padding">@dimen/margin_big</item>
+        <item name="android:background">@drawable/item_background</item>
+    </style>
+
+    <!--公用小标题-->
+    <style name="common_small_title" parent="text_size_middle_gray_8a">
+        <item name="android:layout_marginTop">@dimen/margin_middle</item>
+        <item name="android:layout_marginLeft">@dimen/margin_big</item>
+        <item name="android:layout_marginBottom">@dimen/margin_content_5</item>
+    </style>
+
+    <!--功能项的layout设置-->
+    <style name="common_item_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_action_height</item>
+        <item name="android:paddingLeft">@dimen/margin_big</item>
+        <item name="android:paddingRight">@dimen/margin_big</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/common_select_white_fore_tran_black</item>
+    </style>
+
+    <!--页面介绍大标题-->
+    <style name="common_page_big_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_big</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black_2d</item>
+        <item name="android:textSize">@dimen/text_module_big</item>
+    </style>
+
+    <!--页面介绍大标题Layout-->
+    <style name="common_page_big_title_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_big</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--点击获取验证码按钮-->
+    <style name="common_get_code">
+        <item name="android:background">@drawable/mine_embody_select</item>
+        <item name="android:textColor">@color/blue_00</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_default</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!-- webview loading -->
+    <style name="progress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:maxHeight">2dp</item>
+    </style>
+
+    <!--点击获取验证码按钮-->
+    <style name="common_get_code_gradient" parent="button_parent">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/common_long_button_text_color_code</item>
+        <item name="android:textSize">@dimen/text_default</item>
+        <item name="android:background">@drawable/selector_round_rect_code_background</item>
+        <item name="android:layout_width">@dimen/message_code_button_height</item>
+        <item name="android:layout_height">@dimen/button_round_height</item>
+    </style>
+
+    <!--底部弹出dialog样式-->
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--动画-->
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/translate_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_bottom_out</item>
+    </style>
+
+</resources>

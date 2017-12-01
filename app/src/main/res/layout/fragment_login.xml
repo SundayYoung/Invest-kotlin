@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_big"
+    android:paddingRight="@dimen/margin_big">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@drawable/login_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height"
+        android:layout_marginTop="@dimen/mine_avail_60">
+
+        <EditText
+            android:id="@+id/et_mobile"
+            style="@style/common_item_edittext_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:hint="@string/please_input_phone_number_second"
+            android:inputType="number"
+            android:maxLength="11" />
+
+        <ImageView
+            android:id="@+id/iv_number_clear"
+            style="@style/wrap_height_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/margin_middle"
+            android:src="@drawable/ic_cancel"
+            android:visibility="gone" />
+
+
+        <ImageView
+            style="@style/line_parent"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height">
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/text_size_default_width_match"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:digits="@string/login_pass_check"
+            android:hint="@string/please_input_login_pass"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColorHint="@color/gray_c2" />
+
+        <ImageButton
+            android:id="@+id/ib_desensitization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingBottom="@dimen/margin_middle"
+            android:paddingRight="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_middle"
+            android:src="@drawable/login_icon_eye_close" />
+    </RelativeLayout>
+
+    <ImageView style="@style/line_parent" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/long_button_style"
+        android:layout_marginTop="@dimen/margin_content_26"
+        android:enabled="false"
+        android:text="@string/login" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+
+            android:id="@+id/tv_regist"
+            style="@style/text_size_default"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/margin_big"
+            android:text="@string/login_quick_registration"
+            android:textColor="@color/blue_00" />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="@dimen/stroke_width"
+            android:layout_height="@dimen/line_height_login"
+            android:layout_alignTop="@+id/tv_regist"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_marginTop="@dimen/margin_content_2"
+            android:layout_toRightOf="@+id/tv_regist"
+            android:background="@color/gray_e1" />
+
+        <TextView
+            android:id="@+id/tv_forgetpass"
+            style="@style/text_size_default"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_middle"
+            android:layout_toEndOf="@+id/iv_line"
+            android:layout_toRightOf="@+id/iv_line"
+            android:paddingBottom="@dimen/margin_big"
+            android:text="@string/login_forget_pass"
+            android:textColor="@color/gray_c3" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

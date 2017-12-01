@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weiyankeji.library.customview.swipetoloadlayout.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stl_invest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:swipe_style="classic">
+
+    <include
+        android:id="@id/swipe_refresh_header"
+        layout="@layout/layout_twitter_header" />
+
+    <ExpandableListView
+        android:id="@id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@null"
+        android:listSelector="@color/tran"
+        android:scrollbars="none" />
+
+</com.weiyankeji.library.customview.swipetoloadlayout.SwipeToLoadLayout>

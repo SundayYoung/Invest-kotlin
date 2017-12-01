@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue_00</color>
+    <color name="colorPrimaryDark">@color/blue_00</color>
+    <color name="colorAccent">@color/blue_00</color>
+
+    <!-- 全透明 -->
+    <color name="tran">#00000000</color>
+    <color name="tran_white_50">#80FFFFFF</color>
+    <color name="tran_c6_10">#1AFFFFFF</color>
+    <color name="tran_c6_50">#80FFFFFF</color>
+
+    <color name="tran_black_10">#1A000000</color>
+    <color name="tran_gray_10">#1AC2C5CC</color>
+    <color name="tran_yellow_10">#1AE29310</color>
+    <color name="tran_blue_10">#1A00C2CC</color>
+    <color name="tran_white_70">#B3FFFFFF</color>
+    <color name="tran_white_80">#CCFFFFFF</color>
+    <color name="tran_gray_8a_80">#CC8A8E99</color>
+    <color name="tran_gray_8a_60">#998A8E99</color>
+
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <color name="white_a3">#a3e1e3</color>
+    <!--透明度白色-->
+    <color name="white_trans_0.9">#E5FFFFFF</color>
+    <color name="white_trans_0.7">#B2FFFFFF</color>
+    <color name="white_trans_0.2">#33FFFFFF</color>
+
+    <!-- 整个程序背景主色 -->
+    <color name="common_main_bg_color">#f7f7f7</color>
+
+    <!-- 线 -->
+    <color name="line_color">@color/gray_e1</color>
+
+    <color name="black_30">#303233</color>
+    <color name="black_36">#363B4D</color>
+    <!--<color name="black_2d">#2D3140</color>-->
+    <!--<color name="black_3e">#3E4559</color>-->
+    <color name="black_06">#060101</color>
+    <color name="gray_ea">#EAEAEB</color>
+    <color name="gray_e0">#E0E0E4</color>
+    <color name="gray_8a">#8A8E99</color>
+    <color name="gray_c2">#C2C4CC</color>
+    <color name="gray_c3">#8A8E99</color>
+    <!--<color name="gray_e1">#E1E2E6</color>-->
+    <color name="green_26">#26BF4C</color>
+    <color name="green_3b">#3BD399</color>
+    <!--<color name="blue_00">#00C2CC</color>-->
+    <color name="blue_00b">#00BDC7</color>
+    <color name="blue_01_alpha">#01C2CC</color>
+    <color name="blue_2d">#2DEDED</color>
+    <color name="blue_2b">#2BDDE0</color>
+    <color name="blue_25">#25C4CC</color>
+    <color name="blue_00A">#00AAB3</color>
+    <color name="blue_27">#27D0D9</color>
+    <color name="blue_33">#33D6FF</color>
+    <color name="green_6d">#6DEBA8</color>
+    <color name="red_ff">#FF4C5B</color>
+    <color name="red_f2">#F25F49</color>
+    <color name="red_f3">#F35E63</color>
+    <color name="red_f5">#F55A4C</color>
+    <color name="red_f8">#F8C189</color>
+    <color name="blue_7e">#7ED3E6</color>
+    <color name="blue_63">#63ADF7</color>
+    <color name="orange_fa">#FA6446</color>
+    <color name="orange_fc">#FCA726</color>
+    <color name="yellow_ff">#FFCF4D</color>
+    <color name="yellow_ef">#EFCC65</color>
+
+
+    <color name="gray_bottom_nom">#747783</color>
+    <color name="black_bottom_sel">#1AAFB8</color>
+
+</resources>

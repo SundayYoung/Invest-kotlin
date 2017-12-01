@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:background="@drawable/common_select_white_fore_tran_black"
+    android:divider="@drawable/line_gray"
+    android:dividerPadding="@dimen/margin_big"
+    android:orientation="vertical"
+    android:showDividers="beginning">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_big">
+
+
+        <TextView
+            android:id="@+id/tv_child_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/red_ff"
+            android:textSize="33dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_invest"
+            style="@style/button_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_big"
+            android:background="@drawable/selector_round_rect_blue_click"
+            android:focusable="false"
+            android:text="@string/invest_home_invest_rightnow"
+            android:textColor="@color/blue_00"
+            android:textSize="@dimen/text_default" />
+
+        <ImageView
+            android:id="@+id/iv_invest_sell_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_child_rate"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_child_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_8a"
+                android:textSize="@dimen/text_middle" />
+
+            <LinearLayout
+                android:id="@+id/ll_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_child_rate"
+                android:layout_toRightOf="@id/tv_child_days"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_child_rate"
+            android:text="@string/expected_annual_yield"
+            android:textColor="@color/gray_8a"
+            android:textSize="@dimen/text_middle" />
+
+    </RelativeLayout>
+
+</LinearLayout>

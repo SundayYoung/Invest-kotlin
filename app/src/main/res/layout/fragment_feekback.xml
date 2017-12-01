@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_big">
+
+        <com.weiyankeji.zhongmei.ui.customview.EmojiFilterEditText
+            android:id="@+id/edit_feek"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/shape_round_rect_gray_feek"
+            android:gravity="start"
+            android:hint="@string/feek_back_edit_advice"
+            android:maxLength="250"
+            android:paddingLeft="@dimen/margin_middle"
+            android:paddingTop="@dimen/margin_content_5"
+            android:textColor="@color/black_3e"
+            android:textColorHint="@color/gray_c2"
+            android:textSize="@dimen/text_default" />
+
+        <TextView
+            android:id="@+id/tv_feek_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_feek"
+            android:layout_alignEnd="@+id/edit_feek"
+            android:layout_alignRight="@+id/edit_feek"
+            android:layout_marginBottom="@dimen/margin_content_5"
+            android:layout_marginRight="@dimen/margin_middle"
+            android:text="@string/feek_back_text_number"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_middle" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_feek_back_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_custom_40"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:background="@drawable/shape_round_rect_gray_feek"
+        android:hint="@string/feek_back_edit_contact_information"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/margin_middle"
+        android:textColorHint="@color/gray_c2"
+        android:textColor="@color/black_3e"
+        android:textSize="@dimen/text_default" />
+
+
+    <Button
+        android:id="@+id/bt_feek_back_commit"
+        style="@style/common_long_button_bottom"
+        android:layout_width="@dimen/button_long_width"
+        android:layout_height="@dimen/item_action_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/icon_middle"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/feek_back_commit" />
+
+
+</RelativeLayout>
+
+
+
+

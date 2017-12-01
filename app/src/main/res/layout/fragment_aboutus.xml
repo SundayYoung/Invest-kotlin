@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg_color">
+
+    <LinearLayout
+        android:id="@+id/ll_app_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/about_us_height_229"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mine_avail_60"
+            android:src="@drawable/aboutus_logo" />
+        <!--版本号-->
+        <TextView
+            android:id="@+id/tv_version_name"
+            style="@style/text_size_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/about_us_margin_11"
+            android:background="@color/white"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_app_info"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--了解众美-->
+        <RelativeLayout
+            android:id="@+id/rl_learn_more"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_action_height"
+            android:background="@drawable/item_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_big"
+            android:paddingRight="@dimen/margin_big">
+
+            <TextView
+                style="@style/text_size_default"
+                android:text="@string/about_us_learn_more_zhongmei"
+                android:textColor="@color/black_3e" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/common_icon_arrow" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_line"
+            style="@style/line_parent_bg_white"
+            android:layout_below="@+id/rl_learn_more" />
+        <!--检查更新-->
+        <RelativeLayout
+            android:id="@+id/rl_check_version"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_action_height"
+            android:layout_below="@+id/iv_line"
+            android:background="@drawable/item_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_big"
+            android:paddingRight="@dimen/margin_big">
+
+            <TextView
+                style="@style/text_size_default"
+                android:text="@string/about_us_check_version"
+                android:textColor="@color/black_3e" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/common_icon_arrow" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_size_middle_gray_8a"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_bigger"
+        android:text="@string/about_us_app_user"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.1"/>
+
+
+</RelativeLayout>

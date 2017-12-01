@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_pay_account"
+        android:layout_width="@dimen/icon_biggest"
+        android:layout_height="@dimen/icon_biggest"
+        android:background="@drawable/my_payment_account_activated"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        style="@style/text_size_module_big"
+        android:text="@string/pay_account_activated"
+        android:layout_below="@id/iv_pay_account"
+        android:layout_marginTop="@dimen/margin_bigger"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray_8a"/>
+
+    <Button
+        android:id="@+id/bt_pay_account"
+        style="@style/long_button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_bigger"
+        android:text="@string/invert_to_make_money" />
+</RelativeLayout>

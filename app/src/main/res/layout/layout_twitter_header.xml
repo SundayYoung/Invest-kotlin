@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weiyankeji.zhongmei.ui.customview.TwitterRefreshHeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_action_height">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="@dimen/refresh_image_width_height"
+            android:layout_height="@dimen/refresh_image_width_height"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_content_6"
+            android:layout_marginBottom="@dimen/margin_big"/>
+
+        <TextView
+            android:id="@+id/tvRefresh"
+            android:layout_width="@dimen/item_action_height"
+            android:layout_height="@dimen/refresh_image_width_height"
+            android:layout_toRightOf="@+id/ivArrow"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tran_gray_8a_60"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+</com.weiyankeji.zhongmei.ui.customview.TwitterRefreshHeaderView>

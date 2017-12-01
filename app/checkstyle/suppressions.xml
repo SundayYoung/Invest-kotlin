@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!--
+       create by liuhaiyang
+       checkstyle 过滤规则
+
+       1、model bean 不检测
+  -->
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+<suppressions>
+    <suppress checks="MemberName" files="com[/\\]weiyankeji[/\\]zhongmei[/\\]ui[/\\]mmodel[/\\].*" />
+    <suppress checks="MemberName" files="com[/\\]weiyankeji[/\\]zhongmei[/\\]ui[/\\]mmodel[/\\]bean[/\\].*" />
+    <suppress checks="MemberName" files="com[/\\]weiyankeji[/\\]invest[/\\]mine[/\\]model[/\\].*" />
+    <suppress checks="MemberName" files="com[/\\]weiyankeji[/\\]invest[/\\]help[/\\]model[/\\].*" />
+</suppressions>

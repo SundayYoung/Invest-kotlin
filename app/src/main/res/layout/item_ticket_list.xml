@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="@dimen/margin_middle"
+    android:layout_marginLeft="@dimen/margin_big"
+    android:layout_marginRight="@dimen/margin_big"
+    android:background="@drawable/common_card_disable">
+
+    <TextView
+        android:id="@+id/tv_item_ticket_title"
+        style="@style/wrap_height_width"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="@dimen/margin_big"
+        android:textColor="@color/gray_c2"
+        android:textSize="@dimen/text_default" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tv_item_ticket_title"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_ticket_value"
+            style="@style/wrap_height_width"
+            android:lines="1"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_biggest" />
+
+        <TextView
+            android:id="@+id/tv_item_ticket_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_middle" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap_height_width"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_item_ticket_title"
+        android:layout_marginRight="@dimen/margin_big"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_ticket_money_limit"
+            style="@style/wrap_height_width"
+            android:lines="1"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/tv_item_ticket_use_date"
+            style="@style/wrap_height_width"
+            android:layout_marginTop="@dimen/margin_content_5"
+            android:lines="1"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/tv_item_ticket_use_desc"
+            style="@style/wrap_height_width"
+            android:lines="1"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_middle" />
+    </LinearLayout>
+</RelativeLayout>

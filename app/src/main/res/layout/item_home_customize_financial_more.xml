@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/item_home_customize_financial_child"
+        android:layout_width="125dp"
+        android:layout_height="134dp"
+        android:layout_marginLeft="@dimen/margin_content_5"
+        android:layout_marginRight="@dimen/margin_content_5"
+        android:background="@drawable/shape_round_rect_gray_e1_3dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/tv_item_home_financila_date"
+            style="@style/text_size_middle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_big"
+            android:textColor="@color/black_3e" />
+
+        <TextView
+            android:id="@id/tv_item_home_financila_yield"
+            style="@style/text_size_biggest"
+            android:layout_gravity="center_horizontal"
+            android:lines="1"
+            android:layout_marginTop="@dimen/margin_content_8"
+            android:textColor="@color/red_ff" />
+
+        <TextView
+            style="@style/text_size_small"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/expected_annual_yield"
+            android:textColor="@color/tran_gray_8a_60" />
+
+        <TextView
+            android:id="@id/tv_item_home_financila_money"
+            style="@style/text_size_small"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_content_8"
+            android:background="@color/blue_00"
+            android:paddingLeft="@dimen/margin_content_7"
+            android:paddingRight="@dimen/margin_content_7"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页的安全模块 start-->
+    <string-array name="home_safe_title">
+        <item>关于众美</item>
+        <item>安全保障</item>
+    </string-array>
+    <string-array name="home_safe_content">
+        <item>定制化理财服务商</item>
+        <item>五重保障保驾护航</item>
+    </string-array>
+    <string-array name="home_safe_link">
+        <item></item>
+        <item></item>
+    </string-array>
+    <!-- 首页的安全模块 end-->
+
+    <!--首页的大标题列表 start-->
+    <string-array name="home_module_title">
+        <item>定制理财</item>
+        <item>新手福利</item>
+        <item>精选理财</item>
+        <item>热点关注</item>
+        <item>关于我们</item>
+    </string-array>
+
+    <string-array name="home_module_more">
+        <item>更多定制</item>
+        <item></item>
+        <item></item>
+        <item>更多内容</item>
+        <item></item>
+    </string-array>
+
+    <!--首页的大标题列表 end-->
+
+    <!--投资标的类型，不可更改，不然内部逻辑判断会出错误-->
+    <string-array name="invest_type">
+        <item></item>
+        <item>定制</item>
+        <item>定期</item>
+        <item>网贷</item>
+    </string-array>
+
+    <!--我的邀请 理财奖励 状态 0 未知 1 待发放 2 已发放-->
+    <string-array name="reward_status">
+        <item>未知</item>
+        <item>待发放</item>
+        <item>已发放</item>
+    </string-array>
+
+</resources>

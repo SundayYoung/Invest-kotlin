@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_icon"
+        style="@style/common_item_layout"
+        android:layout_height="@dimen/mine_avail_64"
+        android:clickable="true">
+
+        <TextView
+            style="@style/text_size_default_black3e_custom_details"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_information_icon" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/icon_big"
+            android:layout_height="@dimen/icon_big"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/line_parent_bg_white"
+        android:paddingLeft="@dimen/margin_big" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mobile"
+        style="@style/common_item_layout"
+        android:layout_height="@dimen/mine_avail_64">
+
+        <TextView
+            style="@style/text_size_default_black3e_custom_details"
+            android:layout_centerVertical="true"
+            android:text="@string/change_bind_phone" />
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            style="@style/text_size_default"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_arrow"
+            android:textColor="@color/gray_c2" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_icon_arrow" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/button_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height"
+        android:layout_marginTop="@dimen/margin_bigger"
+        android:background="@drawable/common_select_white_fore_tran_black"
+        android:gravity="center"
+        android:text="@string/mine_information_logout"
+        android:textColor="@color/red_ff"
+        android:textSize="@dimen/text_bigger" />
+
+</LinearLayout>

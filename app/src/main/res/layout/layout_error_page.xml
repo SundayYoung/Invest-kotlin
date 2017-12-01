@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_base_hint_page"
+    style="@style/match_height_width"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/iv_base_hint_page_icon"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:background="@drawable/common_img_nonetwork" />
+
+    <TextView
+        android:id="@+id/tv_base_hint_page_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/net_not_force_please_try_refresh"
+        android:textColor="@color/gray_8a"
+        android:textSize="@dimen/text_default" />
+
+    <Button
+        style="@style/button_parent"
+        android:id="@+id/bt_base_hint_page_function"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_round_rect_blue_click"
+        android:layout_margin="@dimen/margin_bigger"
+        android:text="@string/refresh"
+        android:textColor="@color/blue_00" />
+</LinearLayout>

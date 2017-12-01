@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_custom_68"
+        android:background="@color/white"
+        android:weightSum="2">
+        <!--投资本金-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_custom_prinvipal"
+                style="@style/text_size_default_black3e"
+                android:layout_margin="0dp"
+                android:text="@string/default_numerical_value"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_size_middle_gray_8a"
+                android:text="@string/custom_principal_investment" />
+
+
+        </LinearLayout>
+        <!--待收利息-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_interest_received"
+                style="@style/text_size_default_black3e"
+                android:layout_margin="0dp"
+                android:text="@string/default_numerical_value"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_size_middle_gray_8a"
+                android:text="@string/custom_details_xpected_return" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_middle">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

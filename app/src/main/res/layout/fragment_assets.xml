@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--总资产-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/assets_total_height_115"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_big">
+
+        <TextView
+            android:id="@+id/tv_fixed"
+            style="@style/text_size_middle_gray_8a"
+            android:text="@string/mine_total_assets" />
+
+        <TextView
+            android:id="@+id/tv_total_assets"
+            style="@style/text_size_biggest"
+            android:layout_below="@+id/tv_fixed"
+            android:text="@string/default_numerical_value"
+            android:textStyle="bold"
+            android:textColor="@color/black_2d" />
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/line_parent"
+        android:layout_height="@dimen/line_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/assets_total_height_156"
+        android:orientation="horizontal">
+
+        <com.weiyankeji.zhongmei.ui.customview.PecentView
+            android:id="@+id/pv_ring"
+            android:layout_width="@dimen/assets_total_height_246"
+            android:layout_height="match_parent"
+            app:maxRadius="@dimen/assets_circular_maxradius"
+            app:minRadius="@dimen/assets_circular_minradius"
+            app:pecentColor="@color/gray_c2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_available"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_bigger">
+
+                <ImageView
+                    android:id="@+id/iv_available"
+                    android:layout_width="@dimen/margin_content_6"
+                    android:layout_height="@dimen/margin_content_6"
+                    android:layout_centerVertical="true"
+                    android:background="@color/red_f2" />
+
+                <TextView
+                    style="@style/text_size_middle_gray_8a"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_content_5"
+                    android:layout_toRightOf="@+id/iv_available"
+                    android:text="@string/mine_available_amount_assets" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_transit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_bigger"
+                android:layout_below="@+id/rl_available"
+                android:layout_marginTop="@dimen/margin_content_5">
+
+                <ImageView
+                    android:id="@+id/iv_transit"
+                    android:layout_width="@dimen/margin_content_6"
+                    android:layout_height="@dimen/margin_content_6"
+                    android:layout_centerVertical="true"
+                    android:background="@color/blue_7e" />
+
+                <TextView
+                    style="@style/text_size_middle_gray_8a"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_content_5"
+                    android:layout_toRightOf="@+id/iv_transit"
+                    android:text="@string/assets_in_transit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_principal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_bigger"
+                android:layout_below="@+id/rl_transit"
+                android:layout_marginTop="@dimen/margin_content_5">
+
+                <ImageView
+                    android:id="@+id/iv_principal"
+                    android:layout_width="@dimen/margin_content_6"
+                    android:layout_height="@dimen/margin_content_6"
+                    android:layout_centerVertical="true"
+                    android:background="@color/blue_63" />
+
+                <TextView
+                    style="@style/text_size_middle_gray_8a"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_content_5"
+                    android:layout_toRightOf="@+id/iv_principal"
+                    android:text="@string/mine_principal_received_assets" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_interest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_bigger"
+                android:layout_below="@+id/rl_principal"
+                android:layout_marginTop="@dimen/margin_content_5">
+
+                <ImageView
+                    android:id="@+id/iv_interest"
+                    android:layout_width="@dimen/margin_content_6"
+                    android:layout_height="@dimen/margin_content_6"
+                    android:layout_centerVertical="true"
+                    android:background="@color/yellow_ff" />
+
+                <TextView
+                    style="@style/text_size_middle_gray_8a"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_content_5"
+                    android:layout_toRightOf="@+id/iv_interest"
+                    android:text="@string/mine_interest_received_assets" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/line_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginRight="@dimen/margin_big"
+        android:layout_marginLeft="@dimen/margin_big" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bigger"
+        android:layout_marginTop="@dimen/margin_big"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/margin_content_3"
+                android:layout_height="@dimen/corner_big"
+                android:background="@color/red_f2" />
+
+            <TextView
+                style="@style/text_size_default_black3e_assets"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_content_5"
+                android:layout_weight="0"
+                android:text="@string/mine_available_amount_assets" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_assets_availble"
+            style="@style/text_size_default_black3e_assets"
+            android:text="@string/default_numerical_value" />
+
+        <TextView
+            android:id="@+id/tv_assets_availble_precent"
+            style="@style/text_size_default_black3e_assets"
+            android:text="@string/default_percentage_zero" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bigger"
+        android:layout_marginTop="@dimen/margin_big"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/margin_content_3"
+                android:layout_height="@dimen/corner_big"
+                android:background="@color/blue_7e" />
+
+            <TextView
+                style="@style/text_size_default_black3e_assets"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_content_5"
+                android:layout_weight="0"
+                android:text="@string/assets_in_transit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_assets_transit"
+            style="@style/text_size_default_black3e_assets"
+            android:text="@string/default_numerical_value" />
+
+        <TextView
+            android:id="@+id/tv_assets_transit_percent"
+            style="@style/text_size_default_black3e_assets"
+            android:text="@string/default_percentage_zero" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bigger"
+        android:layout_marginTop="@dimen/margin_big"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/margin_content_3"
+                android:layout_height="@dimen/corner_big"
+                android:background="@color/blue_63" />
+
+            <TextView
+                style="@style/text_size_default_black3e_assets"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_content_5"
+                android:layout_weight="0"
+                android:text="@string/mine_principal_received_assets" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_assets_principal"
+            style="@style/text_size_default_black3e_assets"
+            android:text="@string/default_numerical_value" />
+
+        <TextView
+            android:id="@+id/tv_assets_principal_percent"
+            style="@style/text_size_default_black3e_assets"
+            android:text="@string/default_percentage_zero" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bigger"
+        android:layout_marginTop="@dimen/margin_big"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/margin_content_3"
+                android:layout_height="@dimen/corner_big"
+                android:background="@color/yellow_ff" />
+
+            <TextView
+                style="@style/text_size_default_black3e_assets"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_content_5"
+                android:layout_weight="0"
+                android:text="@string/mine_interest_received_assets" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_assets_interest"
+            style="@style/text_size_default_black3e_assets"
+            android:text="@string/default_numerical_value" />
+
+        <TextView
+            android:id="@+id/tv_assets_interest_percent"
+            style="@style/text_size_default_black3e_assets"
+            android:text="@string/default_percentage_zero" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

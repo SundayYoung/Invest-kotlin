@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_change_bind_phone_title"
+        style="@style/common_page_big_title"
+        android:text="@string/please_valida_new_phone" />
+
+    <ImageView
+        android:id="@+id/iv_change_bind_phone_title_line"
+        style="@style/line_parent"
+        android:layout_below="@id/tv_change_bind_phone_title" />
+
+    <LinearLayout
+        android:id="@+id/rl_change_bind_phone"
+        style="@style/common_item_layout"
+        android:layout_below="@+id/iv_change_bind_phone_title_line">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/new_phone_no"
+            android:textColor="@color/black_3e" />
+
+        <EditText
+            android:id="@+id/et_change_bind_phone"
+            style="@style/common_item_edittext_ll"
+            android:layout_marginLeft="34dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="11"
+            android:hint="@string/please_input_new_phone_no" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_change_bind_phone"
+        style="@style/line_horizontal_margin_left_right"
+        android:layout_below="@id/rl_change_bind_phone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_change_bind_phone_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height"
+        android:layout_below="@id/iv_change_bind_phone"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingRight="@dimen/margin_big">
+
+        <TextView
+            android:id="@+id/tv_change_bind_phone_code_hint"
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_content_5"
+            android:text="@string/msg_valida_code"
+            android:textColor="@color/black_3e" />
+
+        <Button
+            android:id="@+id/bt_change_bind_phone_code"
+            style="@style/common_get_code_gradient"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:enabled="false"
+            android:text="@string/click_get" />
+
+        <EditText
+            android:id="@+id/et_change_bind_phone_code"
+            style="@style/bank_module"
+            android:layout_marginLeft="22dp"
+            android:layout_toLeftOf="@id/bt_change_bind_phone_code"
+            android:layout_toRightOf="@id/tv_change_bind_phone_code_hint"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="@string/msg_code_length"
+            android:hint="@string/please_input_message_code" />
+    </RelativeLayout>
+
+
+    <ImageView
+        style="@style/line_horizontal_margin_left_right"
+        android:layout_below="@id/rl_change_bind_phone_code" />
+
+
+    <Button
+        android:id="@+id/tv_change_bind_phone_submit"
+        style="@style/common_long_button_bottom"
+        android:text="@string/submit" />
+</RelativeLayout>

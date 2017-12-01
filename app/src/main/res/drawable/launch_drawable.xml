@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item android:drawable="@drawable/bg_launcher" />
+    <item android:bottom="80dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/ic_launch" />
+    </item>
+
+    <item android:top="60dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/ic_launch_font" />
+    </item>
+
+</layer-list>

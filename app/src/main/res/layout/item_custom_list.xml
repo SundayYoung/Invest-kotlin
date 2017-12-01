@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_main_bg_color"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_action_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingRight="@dimen/margin_big">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_size_default"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black_3e"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/text_size_default"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue_00" />
+
+        <ImageView
+            style="@style/line_parent"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_big"
+        android:paddingRight="@dimen/margin_big"
+        android:paddingTop="@dimen/margin_big">
+
+        <TextView
+            android:id="@+id/tv_invest_money_start"
+            style="@style/text_size_bigger"
+            android:text="@string/invest_money"
+            android:textStyle="bold"
+            android:textColor="@color/black_3e" />
+        <!--投资金额-->
+        <TextView
+            android:id="@+id/tv_invert"
+            style="@style/text_size_bigger"
+            android:layout_marginLeft="@dimen/margin_content_5"
+            android:textColor="@color/red_ff"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_custom_75"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                style="@style/text_size_default"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:text="@string/custom_start_time"
+                android:textColor="@color/gray_8a" />
+
+            <TextView
+                android:id="@+id/tv_stime"
+                style="@style/text_size_default"
+                android:layout_alignBaseline="@+id/tv_start_time"
+                android:layout_alignBottom="@+id/tv_start_time"
+                android:layout_marginLeft="@dimen/margin_content_5"
+                android:layout_toEndOf="@+id/tv_start_time"
+                android:layout_toRightOf="@+id/tv_start_time"
+                android:textColor="@color/black_3e" />
+
+            <TextView
+                android:id="@+id/tv_over_time"
+                style="@style/text_size_default"
+                android:layout_below="@+id/tv_start_time"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginTop="@dimen/margin_content_5"
+                android:text="@string/custom_start_time_end"
+                android:textColor="@color/gray_8a" />
+
+            <TextView
+                android:id="@+id/tv_otime"
+                style="@style/text_size_default"
+                android:layout_alignBaseline="@+id/tv_over_time"
+                android:layout_alignBottom="@+id/tv_over_time"
+                android:layout_marginLeft="@dimen/margin_content_5"
+                android:layout_toEndOf="@+id/tv_over_time"
+                android:layout_toRightOf="@+id/tv_over_time"
+                android:textColor="@color/black_3e" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/line_height"
+            android:layout_height="@dimen/mine_custom_40"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_e1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/textView_invest"
+                style="@style/text_size_default"
+                android:text="@string/custom_original_invest"
+                android:textColor="@color/gray_8a" />
+
+            <TextView
+                android:id="@+id/tv_haved_invert"
+                style="@style/text_size_default"
+                android:layout_alignBaseline="@+id/textView_invest"
+                android:layout_alignBottom="@+id/textView_invest"
+                android:layout_marginLeft="@dimen/margin_content_5"
+                android:layout_toEndOf="@+id/textView_invest"
+                android:layout_toRightOf="@+id/textView_invest"
+                android:textColor="@color/black_3e" />
+
+            <TextView
+                android:id="@+id/textView_must"
+                style="@style/text_size_default"
+                android:layout_below="@+id/textView_invest"
+                android:layout_marginTop="@dimen/margin_content_5"
+                android:text="@string/custom_must_invert"
+                android:textColor="@color/gray_8a" />
+
+            <TextView
+                android:id="@+id/tv_must_invert"
+                style="@style/text_size_default"
+                android:layout_alignBaseline="@+id/textView_must"
+                android:layout_alignBottom="@+id/textView_must"
+                android:layout_alignLeft="@+id/tv_haved_invert"
+                android:layout_alignStart="@+id/tv_haved_invert"
+                android:textColor="@color/black_3e" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_failure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_custom_40"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            style="@style/line_parent"
+            android:layout_marginLeft="@dimen/margin_big"
+            android:layout_marginRight="@dimen/margin_big" />
+
+        <TextView
+            android:id="@+id/tv_failure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_big"
+            android:textColor="@color/gray_8a"
+            android:textSize="@dimen/text_middle" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_middle"
+        android:background="@color/common_main_bg_color" />
+
+
+</LinearLayout>

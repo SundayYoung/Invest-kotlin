@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/common_small_title"
+        android:text="@string/pay_setting" />
+
+    <LinearLayout
+        android:id="@+id/ll_account_setting_pay_account"
+        style="@style/common_item_layout">
+
+        <TextView
+            style="@style/text_size_default"
+            android:text="@string/pay_account" />
+
+        <TextView
+            android:id="@+id/tv_account_setting_pay_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/no_open"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_default" />
+
+        <ImageView
+            android:id="@+id/iv_account_setting_pay_status"
+            style="@style/wrap_height_width"
+            android:src="@drawable/common_icon_arrow" />
+    </LinearLayout>
+
+    <ImageView style="@style/line_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/rl_account_setting_auth"
+        style="@style/common_item_layout">
+
+        <TextView
+            style="@style/text_size_default"
+            android:text="@string/name_auth" />
+        <TextView
+            android:id="@+id/tv_account_setting_real_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/no_open"
+            android:textColor="@color/gray_c2"
+            android:textSize="@dimen/text_default" />
+
+        <ImageView
+            android:id="@+id/iv_account_setting_real_name"
+            style="@style/wrap_height_width"
+            android:src="@drawable/common_icon_arrow" />
+    </LinearLayout>
+
+    <ImageView style="@style/line_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/rl_account_setting_pay_pw"
+        style="@style/common_item_layout">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/pay_password" />
+
+        <ImageView
+            style="@style/wrap_height_width"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/common_icon_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/common_small_title"
+        android:text="@string/account_safe" />
+
+    <RelativeLayout
+        android:id="@+id/rl_account_setting_change_login_pw"
+        style="@style/common_item_layout">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/change_login_pw" />
+
+        <ImageView
+            style="@style/wrap_height_width"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/common_icon_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/common_small_title"
+        android:text="@string/auth_code" />
+
+    <RelativeLayout
+        android:id="@+id/rl_account_setting_auth_code"
+        style="@style/common_item_layout">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/costom_invest_auth_code" />
+
+        <ImageView
+            style="@style/wrap_height_width"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/common_icon_arrow" />
+    </RelativeLayout>
+</LinearLayout>

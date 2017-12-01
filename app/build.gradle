@@ -1,0 +1,169 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+apply from: '../wy-android-library/checkconfig/quality.gradle'
+project.ext {
+    checkstyleSuppressionsPath = file("${project.rootDir}/checkconfig/quality/checkstyle/suppressions.xml").absolutePath
+}
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    flavorDimensions "default"
+    defaultConfig {
+        applicationId "com.weiyankeji.zhongmei"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+
+        //getui
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "TgVECoWuJ78S7kwFEngug",
+                GETUI_APP_KEY   : "vvGg1WX8h9AcCxydtXT8f4",
+                GETUI_APP_SECRET: "H7UK1ED7xJ8Dqsf7ztEOC5",
+                MTA_APPKEY      : "A81NUD7LCL1I",
+                MTA_CHANNEL     : "yyb"
+        ]
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64", "x86"
+        }
+
+        resConfigs "zh"
+    }
+
+    signingConfigs {
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+            keyAlias 'ZM_Release'
+            keyPassword 'zhongmei2017'
+            storeFile file('keystore/zhongmei.jks')
+            storePassword 'zhongmei2017'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    buildTypes {
+        release {
+            //是否开启混淆
+            minifyEnabled true
+            //是否移除无用资源
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    productFlavors {
+        defaultConfig.versionCode = Integer.parseInt(System.env.BUILD_NUMBER?:"1")
+        print "当前build号是：${defaultConfig.versionCode}"
+        //应用宝
+        yyb {
+        }
+        //百度
+        baidu {
+        }
+        //安智
+        anzhi {
+        }
+        //360
+        qh360 {
+        }
+        //豌豆荚
+        wdj {
+        }
+        //小米
+        xiaomi {
+        }
+        //华为
+        huawei {
+        }
+        //魅族
+        meizu {
+        }
+        //oppo
+        oppo {
+        }
+        //vivo
+        vivo {
+        }
+
+    }
+
+    //渠道号 MTA需要加
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [MTA_CHANNEL: name]
+    }
+    
+    //修改生成的apk名字及输出文件夹 System.env.BUILD_NUMBER 是Jenkins的build号
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            if (variant.buildType.name.equals('release')) {
+                def channel = variant.productFlavors[0].name.startsWith("_") ? variant.productFlavors[0].name.substring(1) : variant.productFlavors[0].name
+                outputFileName = "v${defaultConfig.versionName}_${System.env.BUILD_NUMBER}_${channel}.apk"
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    //weiyan library
+    implementation project(':wy-android-library')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation rootProject.ext.dependencies["junit"]
+    //注解
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    //广告轮播图
+    implementation rootProject.ext.dependencies["banner"]
+    //个推
+    implementation rootProject.ext.dependencies["ge-push"]
+    //微信分享
+    implementation files('libs/libammsdk.jar')
+    //bugly
+    implementation rootProject.ext.dependencies["bugly-sdk"]
+    //SDK
+    implementation rootProject.ext.dependencies["bugly-ndk"]
+    //NDK
+    //webview
+    implementation rootProject.ext.dependencies["webview-bridge"]
+    //MTA的jar包
+    implementation rootProject.ext.dependencies["mta"]
+    //midjar包
+    implementation rootProject.ext.dependencies["mid"]
+    //可视化埋点的相关jar包 （根据需要添加），可视化埋点的版本号，和MTA的版本号必须匹配，只能是当前版本号成对存在。
+    // compile 'com.qq.visual:visual:1.0.5-alpha'
+
+    //eventbus
+    implementation rootProject.ext.dependencies["event-bus"]
+
+    //kotlin
+    compile rootProject.ext.dependencies["kotlin"]
+    //anko
+    compile rootProject.ext.dependencies["anko-com"]
+//    compile rootProject.ext.dependencies["anko-cor"]
+
+}

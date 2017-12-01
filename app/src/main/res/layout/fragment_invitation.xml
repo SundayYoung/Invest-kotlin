@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg_color">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/mine_avail_60"
+        android:scrollbars="vertical" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/progress_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_avail_60"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_share"
+            style="@style/button_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/invite_share_link"
+            android:textColor="@color/blue_00"
+            android:textSize="@dimen/text_bigger" />
+
+        <ImageView
+            android:layout_width="@dimen/line_height"
+            android:layout_height="@dimen/assets_circular_minradius"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line_color" />
+
+        <Button
+            android:id="@+id/btn_face"
+            style="@style/button_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/invite_facetoface"
+            android:textColor="@color/blue_00"
+            android:textSize="@dimen/text_bigger" />
+    </LinearLayout>
+
+</RelativeLayout>

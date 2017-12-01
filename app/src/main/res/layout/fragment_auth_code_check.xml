@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_auth_code_check_title"
+        style="@style/common_page_big_title_layout">
+
+        <TextView
+            style="@style/text_size_module_big_black_2d"
+            android:text="@string/please_input_auth_code" />
+
+        <TextView
+            style="@style/text_size_middle_gray_8a"
+            android:layout_marginTop="@dimen/margin_content_5"
+            android:text="@string/custom_exclusive_products" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ll_auth_code_check_title_line"
+        style="@style/line_parent"
+        android:layout_below="@id/ll_auth_code_check_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_auth_code_check"
+        style="@style/common_item_layout"
+        android:layout_below="@+id/ll_auth_code_check_title_line">
+
+        <TextView
+            style="@style/text_size_default"
+            android:layout_alignParentLeft="true"
+            android:text="@string/auth_code" />
+
+        <EditText
+            android:id="@+id/et_auth_code_check"
+            style="@style/common_item_edittext_ll"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:layout_weight="1"
+            android:digits="@string/olny_letter_and_number"
+            android:hint="@string/please_input_auth_code_2"
+            android:lines="1" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/line_horizontal_margin_left_right"
+        android:layout_below="@id/ll_auth_code_check" />
+
+    <Button
+        android:id="@+id/bt_auth_code_check"
+        style="@style/common_long_button_bottom"
+        android:enabled="false"
+        android:text="@string/submit" />
+</RelativeLayout>
