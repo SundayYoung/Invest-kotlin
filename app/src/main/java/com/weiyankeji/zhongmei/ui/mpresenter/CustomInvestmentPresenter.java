@@ -64,7 +64,7 @@ public class CustomInvestmentPresenter extends BasePresenter<CustomInvestView> {
                         public void onClick() {
                             mFragment.getActivity().finish();
                             Intent intent = new Intent(mFragment.getActivity(), MainActivity.class);
-                            intent.putExtra(ConstantUtils.KEY_TYPE, MainActivity.TYPE_CUSTOM_FINISH);
+                            intent.putExtra(ConstantUtils.KEY_TYPE, MainActivity.Companion.getTYPE_CUSTOM_FINISH());
                             mFragment.startActivity(intent);
 
                         }

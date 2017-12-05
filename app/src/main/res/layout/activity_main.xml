@@ -7,13 +7,13 @@
     android:orientation="vertical">
 
     <com.weiyankeji.library.customview.bottomview.BottomNavigationViewPager
-        android:id="@+id/bvp_content"
+        android:id="@+id/mFragmentVp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"/>
 
     <com.weiyankeji.library.customview.bottomview.BottomNavigationView
-        android:id="@+id/bnv_main"
+        android:id="@+id/mBottomView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

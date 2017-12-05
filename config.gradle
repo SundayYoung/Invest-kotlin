@@ -10,10 +10,11 @@ ext {
     ]
 
     version = [
-            androidSupportSdkVersion : "23+",
+            androidSupportSdkVersion : "27.0.0",
             retrofitSdkVersion       : "2.3.0",
             glideSdkVersion          : "4.0.0",
             butterknifeSdkVersion    : "8.4.0",
+            dagger2Version           : "2.13",
     ]
 
     dependencies = [
@@ -58,6 +59,24 @@ ext {
             //kotlin anko
             "anko-com"               : "org.jetbrains.anko:anko-commons:$anko_version",
             "anko-cor"               : "org.jetbrains.anko:anko-coroutines:$anko_version",
+
+            //dagger2
+            "dagger2"                : "com.google.dagger:dagger:${version["dagger2Version"]}",
+            "dagger2-com"            : "com.google.dagger:dagger-compiler:${version["dagger2Version"]}",
+
+            //Lifecycle
+            "lifecycle"              : "android.arch.lifecycle:runtime:1.0.3",
+            "lifecycle-com"          : "android.arch.lifecycle:compiler:1.0.0",
+
+            //LiveData ViewModel
+            "lifecycle-exten"        : "android.arch.lifecycle:extensions:1.0.0",
+
+            //room
+            "room"                   : "android.arch.persistence.room:runtime:1.0.0",
+            "room-com"               : "android.arch.persistence.room:compiler:1.0.0",
+
+            //RxJava room
+            "room-rxjava"            : "android.arch.persistence.room:rxjava2:1.0.0",
     ]
 
 }

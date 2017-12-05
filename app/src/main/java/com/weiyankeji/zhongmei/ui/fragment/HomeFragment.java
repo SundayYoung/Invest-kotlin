@@ -340,8 +340,6 @@ public class HomeFragment extends BaseMvpFragment<HomeView, HomePresenter> imple
                 params.setMargins((int) mPresenter.mMarginMin, 0, 0, 0);
             }
             view.setLayoutParams(params);
-//            ((TextView) ButterKnife.findById(view, R.id.tv_home_hot_title)).setText(itemBean.title);
-//            ((TextView) ButterKnife.findById(view, R.id.tv_home_hot_content)).setText(itemBean.subtitle);
             ImageView imageView = ButterKnife.findById(view, R.id.iv_home_hot_bg);
             ImageLoaderUtil.loadArcImage(mContext, itemBean.bg_img_url, imageView, 2, R.drawable.home_news_default);
             view.setId(i);

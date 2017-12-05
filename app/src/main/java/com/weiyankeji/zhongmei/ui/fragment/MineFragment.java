@@ -109,7 +109,7 @@ public class MineFragment extends BaseMvpFragment<MineView, MinePresenter> imple
 
     @Override
     public void onRefresh() {
-        mMainActivity.netRedNotif();
+//        mMainActivity.netRedNotif();
         mMinePresenter.loadData(new BaseRequest());
     }
 
@@ -150,7 +150,7 @@ public class MineFragment extends BaseMvpFragment<MineView, MinePresenter> imple
         } else {
             mSwipeToLoadLayout.setRefreshEnabled(false);
         }
-        CommonUtils.setNotificationPointOfActivity(mMainActivity, SharedPreferencesUtil.getSharedPreferences(mContext, ConstantUtils.SHAREDPREFERENCES_NAME), mMainActivity.mMinePositon, mMainActivity.mMinePositon, mIvNotification);
+        CommonUtils.setNotificationPointOfActivity(mMainActivity, SharedPreferencesUtil.getSharedPreferences(mContext, ConstantUtils.SHAREDPREFERENCES_NAME), mMainActivity.getMMinePositon(), mMainActivity.getMMinePositon(), mIvNotification);
         getUserInfo();
         if (mIsLogin) {
             mMinePresenter.loadData(new BaseRequest());
@@ -181,7 +181,7 @@ public class MineFragment extends BaseMvpFragment<MineView, MinePresenter> imple
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
-            CommonUtils.setNotificationPointOfActivity(mMainActivity, SharedPreferencesUtil.getSharedPreferences(mContext, ConstantUtils.SHAREDPREFERENCES_NAME), mMainActivity.mMinePositon, mMainActivity.mMinePositon, mIvNotification);
+            CommonUtils.setNotificationPointOfActivity(mMainActivity, SharedPreferencesUtil.getSharedPreferences(mContext, ConstantUtils.SHAREDPREFERENCES_NAME), mMainActivity.getMMinePositon(), mMainActivity.getMMinePositon(), mIvNotification);
             if (mIsLogin) {
                 mMinePresenter.loadData(new BaseRequest());
                 setAccout();

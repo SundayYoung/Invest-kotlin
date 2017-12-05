@@ -157,7 +157,7 @@ public class InvestProductDetailFragment extends BaseMvpFragment<InvestDetailVie
         switch (view.getId()) {
             case R.id.rl_safe:
                 parm.putString(ConstantUtils.KEY_TITLE, getString(R.string.invest_detail_security));
-                startFragment(InvestProductIntroductionFragment.class, parm);
+                startFragment(InvestIntroductionV2Fragment.class, parm);
                 break;
             case R.id.tv_detail_more_introduce:
                 parm.putString(ConstantUtils.KEY_TITLE, getString(R.string.invest_detail_introduction));

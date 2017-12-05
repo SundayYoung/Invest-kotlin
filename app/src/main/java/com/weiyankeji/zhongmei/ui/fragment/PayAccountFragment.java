@@ -27,7 +27,7 @@ public class PayAccountFragment extends BaseFragment {
     @OnClick(R.id.bt_pay_account)
     public void onClick() {
         Intent intent = new Intent(getActivity(), MainActivity.class);
-        intent.putExtra(ConstantUtils.KEY_TYPE, MainActivity.TYPE_PAY_ACCOUNT_FINISH);
+        intent.putExtra(ConstantUtils.KEY_TYPE, MainActivity.Companion.getTYPE_PAY_ACCOUNT_FINISH());
         getActivity().startActivity(intent);
         getActivity().onBackPressed();
     }

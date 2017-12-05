@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 apply from: '../wy-android-library/checkconfig/quality.gradle'
 project.ext {
@@ -124,7 +125,12 @@ android {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
     }
+
+    sourceSets {
+        main.res.srcDirs += ['src/main/kotlin', 'src/main/kapt']
+    }
 }
+
 
 dependencies {
     //weiyan library
@@ -136,7 +142,7 @@ dependencies {
     testImplementation rootProject.ext.dependencies["junit"]
     //注解
     implementation rootProject.ext.dependencies["butterknife"]
-    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    kapt rootProject.ext.dependencies["butterknife-compiler"]
     //广告轮播图
     implementation rootProject.ext.dependencies["banner"]
     //个推
@@ -161,9 +167,25 @@ dependencies {
     implementation rootProject.ext.dependencies["event-bus"]
 
     //kotlin
-    compile rootProject.ext.dependencies["kotlin"]
+    implementation rootProject.ext.dependencies["kotlin"]
     //anko
-    compile rootProject.ext.dependencies["anko-com"]
+    implementation rootProject.ext.dependencies["anko-com"]
 //    compile rootProject.ext.dependencies["anko-cor"]
+
+    //dagger2
+    implementation rootProject.ext.dependencies["dagger2"]
+    kapt rootProject.ext.dependencies["dagger2-com"]
+
+    //arch components
+    //Lifecycle
+    implementation rootProject.ext.dependencies["lifecycle"]
+    annotationProcessor rootProject.ext.dependencies["lifecycle-com"]
+    //LiveData ViewModel
+    implementation rootProject.ext.dependencies["lifecycle-exten"]
+    //Room
+    implementation rootProject.ext.dependencies["room"]
+    annotationProcessor rootProject.ext.dependencies["room-com"]
+    //RxJava Room
+    implementation rootProject.ext.dependencies["room-rxjava"]
 
 }
